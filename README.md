@@ -98,3 +98,17 @@ It take all the error(residuals) and sum up the distance for all of them,take th
 	- R2-co eff of determination:
   	RSS=sum of squared residuals
 TSS=total sum of squares
+## k-means clustering(unsupervised)
+- compute k cluster from the data.
+## Expectation maximization:
+- 1.choose 3 points to be the centroids(the center of the cluster)
+- 2.we calculate the distance  between each of points to the centroid
+- assigning the points to the closest centroid(Expectation step)
+- 3.compute the new centroid based on the points  (maximization step)
+- We use this in order to compute the centroids assign all the points to clusters according to those centroids and them we are recomputing that over again and again until we reach some stable points where nothing is changing anymore.
+## Principal component analysis:
+- Dimensionality reduction(reducing the feature and put them in one dimension that give me more information.
+
+
+
+
