@@ -107,7 +107,7 @@ TSS=total sum of squares
 - 3.compute the new centroid based on the points  (maximization step)
 - We use this in order to compute the centroids assign all the points to clusters according to those centroids and them we are recomputing that over again and again until we reach some stable points where nothing is changing anymore.
 ## Principal component analysis:
-- Dimensionality reduction(reducing the feature and put them in one dimension that give me more information.
+- Dimensionality reduction(reducing the feature and put them in one dimension that give more information.
 
 
 
