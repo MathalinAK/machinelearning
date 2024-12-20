@@ -72,6 +72,32 @@ Overfitting and regularization:
 		If the data has the high bias(training data)and high variance(test data)==underfitting.
 	Overfitting:
 		bias will be low but in the testing it give high variance(testing error)this is called overfitting.
+To reduce overfitting in a model:
+Simplify the model: 
+	Use fewer parameters or apply techniques like L1/L2 regularization to make the model less flexible.
+Get more data: 
+	The more data your model learns from, the less likely it is to overfit.
+Use cross-validation (CV):
+	Train and test your model on different parts of the data to check if it generalizes well.
+Early stopping:
+	Stop training when the model's performance on a validation set starts to decline.
+Ensemble methods: 
+	Combine multiple models (like decision trees) to reduce overfitting.
+Dropout: 
+	For neural networks, randomly turn off some connections during training to prevent the model from overfitting.
+Regularization:
+	Regularization or shrinkage is the method that shrinks some of the estimated coefficients towards zero, to penalize unimportant variables for increasing the variance of the model
+	Used solve the overfitting problem
+	Introduces a bias in the model to decrease its variance 
+Regularization technique:
+	Ridge regression based on l2 norm
+	Lasso regression based  on l1 norm
+	Dropout(in nn)
+Ridge regression or l2 regularization :
+	It is a shrinkage technique that aims to solve overfitting by shrinking some of the middle coefficients towards 0 reduce the model variance
+L2  norm :
+	It is a mathematical term coming from linear algebra and it stands for a Euclidean norm or distance
+
 
 
 
