@@ -33,27 +33,43 @@ Supervised is categories into two methods depending on the type of dependent var
 * silhouette score
 * completeness
 ## Machine Learning model evalution:
- **Step1:  (preparing of data)**
-1. Data preparation
-	* split the data into train,validation and test,splitting the data into multiple sets
-	* The training set of data is used to feed the model and validation set is used to optimize the hyperparameter and to pick the best model
-	* The test set is use to evaluate the model performance
- **step2:  (Model training)** 
-2. Model Training
-	* In model training we need to choose an algorithm or set of algorithm 
-	* And train the model on the training data and save the fitted model
-	* So the algorithm will depend on the specific task and the characteristic of the data
- **Step3:  (Hyperparameter tuning)**
-3. Hyperparameter tuning
-	* Use the fitted model and validation  set to find the optimal set of parameters where the model performs the best 
- **Step4:  (Prediction)**
-4. Prediction
-	*Use the optimal set set of parameter from hyperparameter tuning stage and training data
-	*To train the model again with these hyper parameters use this best fitted model to predictions on test data
+ # Machine Learning Model Evaluation
 
- **Step5:  (Test error rate)**
-5. Test error rate 
-	* Compute the performance metric for your model using the prediction and real value of the target variables from your test data
+## Step 1: Preparing the Data
+**Data Preparation:**
+- Split the data into **training**, **validation**, and **test** sets.
+- The training set is used to train the model.
+- The validation set is used to optimize hyperparameters and pick the best model.
+- The test set is used to evaluate the model's performance.
+
+---
+
+## Step 2: Model Training
+**Model Training:**
+- Choose an algorithm or a set of algorithms for the task.
+- Train the model on the training data and save the fitted model.
+- The choice of algorithm depends on the specific task and the characteristics of the data.
+
+---
+
+## Step 3: Hyperparameter Tuning
+**Hyperparameter Tuning:**
+- Use the fitted model and the validation set to find the optimal set of parameters where the model performs best.
+
+---
+
+## Step 4: Prediction
+**Prediction:**
+- Use the optimal set of hyperparameters from the tuning stage.
+- Retrain the model with these hyperparameters using the training data.
+- Use the best-fitted model to make predictions on the test data.
+
+---
+
+## Step 5: Test Error Rate
+**Test Error Rate:**
+- Compute the performance metric for your model using predictions and the actual target values from the test data.
+
 ## Bias-variance trade off:
 **bias**
  	* Bias of the machine learning model is its inability to capture the true relationship the data, mathematically equal to the difference between the expectation of model and its true value
