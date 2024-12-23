@@ -14,10 +14,10 @@
 Supervised is categories into two methods depending on the type of dependent variable they are predicted.
 ## Regression and classification 
  1. Regression:
-	 * Regression predict the continuous values
-	 * It can be used when the response variable to be predicted is a continuous variable
-	 * ex: linear regression, fixed effects regression, xgboost regression(identify the temperature based on the give feature)
-	 * For regression the means squared is commonly used
+	 -  Regression predict the continuous values
+	 - It can be used when the response variable to be predicted is a continuous variable
+	-  ex: linear regression, fixed effects regression, xgboost regression(identify the temperature based on the give feature)
+	 -  For regression the means squared is commonly used
 2. Classification:
 	* while the classification predict the categorized values.  
 	* It can be used when the response variable to be predicted is a continuous variable
