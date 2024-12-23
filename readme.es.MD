@@ -138,6 +138,77 @@ Supervised is categories into two methods depending on the type of dependent var
 - **Linear Regression**: Models the relationship between variables:
   - **Simple Linear Regression**: One independent variable.
   - **Multiple Linear Regression**: Multiple independent variables.
+## simple linear regression:
+## y=B0 + B1X + U
+- **y (Dependent Variable)**: The variable being measured or predicted.  
+- **X (Independent Variable)**: The variable that influences or explains y.  
+- **B0 (Intercept)**: The constant, unknown term where the regression line crosses the y-axis.  
+- **Beta (B1)**: The slope coefficient, an unknown parameter that shows the impact of X on y.  
+- **U (Error Term)**: The difference between the predicted and actual values (unexplained part).  
+- **i (Index)**: Represents each observation (row) in the dataset.
+
+### Multiple Linear Regression:
+- A statistical method to model the relationship between a dependent variable (y) and multiple independent variables (X1, X2, ... Xn).
+
+### Linear Regression Estimation:
+- **Goal**: To estimate the unknown parameters (B0, B1, ...) to understand how X impacts y.  
+- **Ordinary Least Squares (OLS)**:  
+  - A technique to estimate parameters by finding the line that minimizes the sum of squared errors.  
+  - Fits a regression line through paired x and y values to best predict y from X. 
+### Importing Libraries:
+
+- **import pandas as pd**: Used for reading and manipulating data (e.g., dataframes, handling missing values, and preprocessing).  
+
+- **import numpy as np**: Used for numerical operations, working with arrays, and data manipulation.  
+
+- **import matplotlib.pyplot as plt**: Used for creating visualizations like scatter plots, line plots, and heatmaps.  
+
+- **import seaborn as sns**: Used for advanced data visualization, such as scatter plots and heatmaps.  
+
+- **from scipy import stats**: Provides tools for statistical analysis, including tests and probability distributions.  
+
+- **import statsmodels.api as sm**: Used for statistical modeling like linear regression and time series analysis.  
+
+- **from sklearn.linear_model import LinearRegression**: Used to create and train linear regression models.  
+
+- **from sklearn.model_selection import train_test_split**: Splits the data into training and testing sets for model evaluation.  
+### Missing Data Analysis:
+
+- **Check for Missing Values**:
+  - `missing_values = data.isnull().sum()`: Count missing values in each column.
+  - Calculate the percentage of missing data:
+ 	- missing_percentage = (missing_values / len(data)) * 100
+    
+
+- **Handling Missing Data**:
+  - If the missing data is not important to the project, use the percentage of missing data to decide:
+    - **Drop Independent Variable**: If only a small percentage of data is missing in an important column, keep the column and drop observations with missing values (e.g., in the `total_bedrooms` column).
+    - **Imputation**: Replace missing values systematically using mean, median, or model-based imputation techniques.
+
+- **When to Drop or Impute**:
+  - If 10% of data is missing in a large dataset, you can drop the missing rows.
+  - If 20%-40% of data is missing in a smaller dataset, consider imputing the missing values.
+
+- **Remove Rows with Missing Values**:
+  - Use `data_cleaned = data.dropna()` to remove rows with missing values.
+  - Verify removal with `print(data_cleaned.isnull().sum())`.
+
+---
+
+### Data Exploration and Visualization:
+
+- **Understand Data**:
+  - Look for patterns, differences, imbalances, and categorical values.
+
+- **Use `data.describe()`**:
+  - Provides descriptive statistics like mean, standard deviation, and percentiles.
+
+- **Percentiles**:
+  - **25th Percentile (Q1)**: Lower quartile.
+  - **50th Percentile (Q2)**: Median.
+  - **75th Percentile (Q3)**: Upper quartile.
+
+
 
 
 
