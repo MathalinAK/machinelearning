@@ -175,14 +175,14 @@ Supervised is categories into two methods depending on the type of dependent var
 ### Missing Data Analysis:
 
 - **Check for Missing Values**:
-  - `missing_values = data.isnull().sum()`: Count missing values in each column.
+  - missing_values = data.isnull().sum(): Count missing values in each column.
   - Calculate the percentage of missing data:
  	- missing_percentage = (missing_values / len(data)) * 100
     
 
 - **Handling Missing Data**:
   - If the missing data is not important to the project, use the percentage of missing data to decide:
-    - **Drop Independent Variable**: If only a small percentage of data is missing in an important column, keep the column and drop observations with missing values (e.g., in the `total_bedrooms` column).
+    - **Drop Independent Variable**: If only a small percentage of data is missing in an important column, keep the column and drop observations with missing values (e.g., in the total_bedrooms column).
     - **Imputation**: Replace missing values systematically using mean, median, or model-based imputation techniques.
 
 - **When to Drop or Impute**:
@@ -191,7 +191,7 @@ Supervised is categories into two methods depending on the type of dependent var
 
 - **Remove Rows with Missing Values**:
   - Use `data_cleaned = data.dropna()` to remove rows with missing values.
-  - Verify removal with `print(data_cleaned.isnull().sum())`.
+  - Verify removal with -->print(data_cleaned.isnull().sum()).
 
 ---
 
@@ -200,7 +200,7 @@ Supervised is categories into two methods depending on the type of dependent var
 - **Understand Data**:
   - Look for patterns, differences, imbalances, and categorical values.
 
-- **Use `data.describe()`**:
+- **Use data.describe()**:
   - Provides descriptive statistics like mean, standard deviation, and percentiles.
 
 - **Percentiles**:
