@@ -1,7 +1,7 @@
 ## Machine learning 
-	-It is a brand of artificial intelligence
-	-That helps to build models based on the data and learn the data in order to make different decision
-	-ex: They are using in any industries like healthcare entertainment in order to improve the customer behaviour
+	 It is a brand of artificial intelligence.
+	 That helps to build models based on the data and learn the data in order to make different decision.
+	 ex: They are using in any industries like healthcare entertainment in order to improve the customer behaviour.
 ## Supervised vs unsupervised
 	- Supervised(the primary goal of supervised learning is minimize errors in predictions)
 	- Requires training data with independent variable(labelled data)
