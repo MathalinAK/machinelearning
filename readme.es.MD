@@ -1,4 +1,4 @@
-Machine learning :
+## Machine learning :
 	It is a brand of artificial intelligence that
 	helps to build models based on the data and learn the data in order to make different decision
 	ex: They are using in any industries like healthcare entertainment in order to improve the customer behaviour.
