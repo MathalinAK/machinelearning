@@ -29,20 +29,20 @@ Supervised is categories into two methods depending on the type of dependent var
 - Recall=TruePositive/TruePositive+ falsegative
 - F1Score = 2*Recall + Precision/Recall + Precision
 ## Clustering performance metrices:
-- homogeneity
- - silhouette score
-- completeness
+* homogeneity
+* silhouette score
+* completeness
 ## Machine Learning model evalution:
-## Step1:  (preparing of data)
-	** Data preparation:**	
-		- split the data into train,validation and test,splitting the data into multiple sets.
-		- The training set of data is used to feed the model and validation set is used to optimize the hyperparameter and to pick the best model.
-		- The test set is use to evaluate the model performance.
-** step 2:(Model training) **
-	  ** Model Training: **
-		- In model training we need to choose an algorithm or set of algorithm. 
-		- And train the model on the training data and save the fitted model.
-		- So the algorithm will depend on the specific task and the characteristic of the data.
+1 .Step1:  (preparing of data)
+	1. Data preparation
+		* split the data into train,validation and test,splitting the data into multiple sets.
+		* The training set of data is used to feed the model and validation set is used to optimize the hyperparameter and to pick the best model.
+		* The test set is use to evaluate the model performance.
+	2. step 2:(Model training) 
+	  2. Model Training
+		* In model training we need to choose an algorithm or set of algorithm. 
+		* And train the model on the training data and save the fitted model.
+		* So the algorithm will depend on the specific task and the characteristic of the data.
 ** Step3:(Hyperparameter tuning) **
 		- Use the fitted model and validation  set to find the optimal set of parameters where the model performs the best .
 ** Step 4:(Prediction) **
