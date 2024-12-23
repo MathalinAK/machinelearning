@@ -38,22 +38,25 @@ Supervised is categories into two methods depending on the type of dependent var
 	* split the data into train,validation and test,splitting the data into multiple sets
 	* The training set of data is used to feed the model and validation set is used to optimize the hyperparameter and to pick the best model
 	* The test set is use to evaluate the model performance
-### step 2:(Model training) 
-	  2. Model Training
+**step 2:(Model training)** 
+2. Model Training
 		* In model training we need to choose an algorithm or set of algorithm. 
 		* And train the model on the training data and save the fitted model.
 		* So the algorithm will depend on the specific task and the characteristic of the data.
-### Step3:(Hyperparameter tuning) 
-		- Use the fitted model and validation  set to find the optimal set of parameters where the model performs the best .
+3. Hyperparameter tuning
+**Step3:(Hyperparameter tuning)**
+		* Use the fitted model and validation  set to find the optimal set of parameters where the model performs the best .
+4. Prediction
 ** Step 4:(Prediction) **
-		- Use the optimal set set of parameter from hyperparameter tuning stage and training data.
-		- To train the model again with these hyper parameters use this best fitted model to predictions on test data.
-** Step  5:(Test error rate) **
-		- Compute the performance metric for your model using the prediction and real value of the target variables from your test data.
+		*Use the optimal set set of parameter from hyperparameter tuning stage and training data.
+		*To train the model again with these hyper parameters use this best fitted model to predictions on test data.
+5. Test error rate 
+**Step5:(Test error rate)**
+		* Compute the performance metric for your model using the prediction and real value of the target variables from your test data.
 ## Bias-variance trade off:
- 		- Bias of the machine learning model is its inability to capture the true relationship the data, mathematically equal to the difference between the expectation of model and its true value
-  		- It expressed as the expectation of the difference between the estimate(f(x0) and the true value.
-		- Bias is a error that occur in the training data eg (if we fit and train a data in there we find an error is called bias)
+ 		* Bias of the machine learning model is its inability to capture the true relationship the data, mathematically equal to the difference between the expectation of model and its true value
+  		* It expressed as the expectation of the difference between the estimate(f(x0) and the true value.
+		* Bias is a error that occur in the training data eg (if we fit and train a data in there we find an error is called bias)
 ** Variance:**
 		- Variance of the machine learning model is the inconstancy level of model performance when applying it to different data sets.
 		- When the same models that is trained using the training data performs entirely different than on test data then model variance is high.
