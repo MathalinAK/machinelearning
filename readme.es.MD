@@ -18,11 +18,11 @@ Supervised is categories into two methods depending on the type of dependent var
 	 2. It can be used when the response variable to be predicted is a continuous variable
 	 3. ex: linear regression, fixed effects regression, xgboost regression(identify the temperature based on the give feature)
 	 4. For regression the means squared is commonly used
-       ## Classification:
-	- while the classification predict the categorized values.  
-	- It can be used when the response variable to be predicted is a continuous variable
-	- ex :logistic regression, xgboost classification(will rain or not?)
-	- for classification the accuracy commonly used .
+2. Classification:
+	* while the classification predict the categorized values.  
+	* It can be used when the response variable to be predicted is a continuous variable
+	* ex :logistic regression, xgboost classification(will rain or not?)
+	* for classification the accuracy commonly used .
 ## classification performance metrics:
 - Accuracy =Classification/CorrectPrediction + IncorrectPrediction
 - Precision =TruePositive/TruePositive+ FalsePositive
