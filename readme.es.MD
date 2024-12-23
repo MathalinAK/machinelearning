@@ -43,11 +43,11 @@ Supervised is categories into two methods depending on the type of dependent var
 	* In model training we need to choose an algorithm or set of algorithm. 
 	* And train the model on the training data and save the fitted model.
 	* So the algorithm will depend on the specific task and the characteristic of the data.
-3. Hyperparameter tuning
 **Step3:(Hyperparameter tuning)**
+3. Hyperparameter tuning
 	* Use the fitted model and validation  set to find the optimal set of parameters where the model performs the best .
-4. Prediction
 **Step4:(Prediction)**
+4. Prediction
 	*Use the optimal set set of parameter from hyperparameter tuning stage and training data.
 	*To train the model again with these hyper parameters use this best fitted model to predictions on test data.
 5. Test error rate 
