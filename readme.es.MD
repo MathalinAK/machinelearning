@@ -33,7 +33,7 @@ Supervised is categories into two methods depending on the type of dependent var
 * silhouette score
 * completeness
 ## Machine Learning model evalution:
-#### Step1:  (preparing of data)
+ **Step1:  (preparing of data)**
 	1. Data preparation
 		* split the data into train,validation and test,splitting the data into multiple sets
 		* The training set of data is used to feed the model and validation set is used to optimize the hyperparameter and to pick the best model
