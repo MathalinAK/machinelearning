@@ -14,10 +14,10 @@
 Supervised is categories into two methods depending on the type of dependent variable they are predicted.
 ## Regression and classification 
  1. Regression:
-	 -  Regression predict the continuous values
-	 - It can be used when the response variable to be predicted is a continuous variable
-	-  ex: linear regression, fixed effects regression, xgboost regression(identify the temperature based on the give feature)
-	 -  For regression the means squared is commonly used
+	 *  Regression predict the continuous values
+	 * It can be used when the response variable to be predicted is a continuous variable
+	 * ex: linear regression, fixed effects regression, xgboost regression(identify the temperature based on the give feature)
+	 *  For regression the means squared is commonly used
 2. Classification:
 	* while the classification predict the categorized values.  
 	* It can be used when the response variable to be predicted is a continuous variable
@@ -34,10 +34,10 @@ Supervised is categories into two methods depending on the type of dependent var
 * completeness
 ## Machine Learning model evalution:
  **Step1:  (preparing of data)**
-	1. Data preparation
-		* split the data into train,validation and test,splitting the data into multiple sets
-		* The training set of data is used to feed the model and validation set is used to optimize the hyperparameter and to pick the best model
-		* The test set is use to evaluate the model performance
+1. Data preparation
+	* split the data into train,validation and test,splitting the data into multiple sets
+	* The training set of data is used to feed the model and validation set is used to optimize the hyperparameter and to pick the best model
+	* The test set is use to evaluate the model performance
 ### step 2:(Model training) 
 	  2. Model Training
 		* In model training we need to choose an algorithm or set of algorithm. 
