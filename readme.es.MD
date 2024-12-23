@@ -3,26 +3,26 @@
 - That helps to build models based on the data and learn the data in order to make different decision.
 - ex: They are using in any industries like healthcare entertainment in order to improve the customer behaviour.
 ## Supervised vs unsupervised
-	- Supervised(the primary goal of supervised learning is minimize errors in predictions)
-	- Requires training data with independent variable(labelled data)
-	- Need labelled data to supervise the algorithm when learning from the data.
-	- Ex: Regression models ,classification models.
+- Supervised(the primary goal of supervised learning is minimize errors in predictions)
+- Requires training data with independent variable(labelled data)
+- Need labelled data to supervise the algorithm when learning from the data.
+- Ex: Regression models ,classification models.
 ## Unsupervised learning:
-	- Requires training data with independent variables only.
-	- No need labelled data that can supervise the algorithm when learning from the data
-	- Ex: Clustering models, Outlier detection models.
+- Requires training data with independent variables only.
+- No need labelled data that can supervise the algorithm when learning from the data
+- Ex: Clustering models, Outlier detection models.
 Supervised is categories into two methods depending on the type of dependent variable they are predicted.
 ## Regression and classification 
 	## Regression:
-		- Regression predict the continuous values
-		- It can be used when the response variable to be predicted is a continuous variable
-		- ex: linear regression, fixed effects regression, xgboost regression(identify the temperature based on the give feature)
-		- For regression the means squared is commonly used.
+	- Regression predict the continuous values
+	- It can be used when the response variable to be predicted is a continuous variable
+	- ex: linear regression, fixed effects regression, xgboost regression(identify the temperature based on the give feature)
+	 - For regression the means squared is commonly used.
        ## Classification:
-		- while the classification predict the categorized values.  
-		- It can be used when the response variable to be predicted is a continuous variable
-		- ex :logistic regression, xgboost classification(will rain or not?)
-		- for classification the accuracy commonly used .
+	- while the classification predict the categorized values.  
+	- It can be used when the response variable to be predicted is a continuous variable
+	- ex :logistic regression, xgboost classification(will rain or not?)
+	- for classification the accuracy commonly used .
 ## classification performance metrics:
 - Accuracy =Classification/CorrectPrediction + IncorrectPrediction
 - Precision =TruePositive/TruePositive+ FalsePositive
