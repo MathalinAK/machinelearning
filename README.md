@@ -26,9 +26,9 @@ Al-->AI helps the machine to think without the human intervention(the machine wi
 	- *it can take any values(0.1,22.3)
 ### Type of prediction:
 	- classification--predict discrete classes
-## 1.binary classification:
+ 1.binary classification:
 	- two prediction is or not (0,1)
-## 2.multi class: 
+ 2.multi class: 
 	- predict more than two or more categories
 ### K-Nearest Neighbor:
 o	K-NN algorithm assumes the similarity between the new case/data and available cases and put the new case into the category that is most similar to the available categories.
