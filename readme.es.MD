@@ -105,6 +105,41 @@ Supervised is categories into two methods depending on the type of dependent var
   - The model has **high variance** on test data (large testing error).
 - Happens when the model is too focused on the training data and fails to generalize.
 - variance(testing error)this is called overfitting.
+### Overfitting Reduction Techniques:
+- **Reduce Model Complexity**: Use fewer parameters or apply regularization (L1/L2).  
+- **Collect More Data**: More data reduces the chance of overfitting.  
+- **Resampling (Cross-Validation)**: Train and test on different subsets to identify overfitting.  
+- **Early Stopping**: Stop training when performance on a validation set starts decreasing.  
+- **Ensemble Methods**: Combine multiple models (e.g., decision trees) to reduce overfitting.  
+- **Dropout**: A regularization technique that drops random neurons during training in neural networks.
+
+### Generalization:
+- **Low Bias + Low Variance**: The model predicts well with minimal residuals (errors). This indicates good generalization.
+
+### Regularization:
+- **Definition**: Shrinks some coefficients towards zero to penalize unimportant variables and reduce overfitting.  
+  - **Purpose**: Introduces small bias to decrease variance and solve overfitting.  
+  - **Techniques**:  
+    - **Ridge Regression**: Uses L2 norm.  
+    - **Lasso Regression**: Uses L1 norm.  
+    - **Dropout**: Used in neural networks.  
+- **Dropout**: A neural network technique that randomly removes some neurons during training to prevent overfitting.
+
+- **Ridge Regression (L2 Regularization)**: Shrinks coefficients towards 0 to reduce model variance using the L2 norm (Euclidean distance).
+
+- **Lasso Regression (L1 Regularization)**: Shrinks some coefficients to 0, removing irrelevant features, using the L1 norm.
+
+- **Dependent Variable**: The measured or tested variable, dependent on the independent variable.
+
+- **Independent Variable**: The variable controlled or manipulated, believed to affect the dependent variable.
+
+- **Statistical Significance**: An effect unlikely to occur by chance, considered real.
+
+- **Linear Regression**: Models the relationship between variables:
+  - **Simple Linear Regression**: One independent variable.
+  - **Multiple Linear Regression**: Multiple independent variables.
+
+
 
 
 
