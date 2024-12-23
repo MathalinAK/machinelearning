@@ -13,7 +13,7 @@
 - Ex: Clustering models, Outlier detection models.
 Supervised is categories into two methods depending on the type of dependent variable they are predicted.
 ## Regression and classification 
- **Regression:**
+ 1. Regression:
 	 1. Regression predict the continuous values
 	 2. It can be used when the response variable to be predicted is a continuous variable
 	 3. ex: linear regression, fixed effects regression, xgboost regression(identify the temperature based on the give feature)
