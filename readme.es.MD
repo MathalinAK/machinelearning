@@ -207,6 +207,26 @@ Supervised is categories into two methods depending on the type of dependent var
   - **25th Percentile (Q1)**: Lower quartile.
   - **50th Percentile (Q2)**: Median.
   - **75th Percentile (Q3)**: Upper quartile.
+Data Visualization and Histogram (Matplotlib, Seaborn)
+- Visualize the dependent variable (target or response variable) to understand its distribution.  
+- In this case, the dependent variable is the **Median House Values**.
+1. **Understand the Distribution**:
+   - Analyze how the Median House Values are distributed across the dataset.
+   - Identify the most frequently appearing median house values.
+   - Identify blocks with unique or less frequently appearing median house values.
+   
+2. **Insights from the Histogram**:
+   - The histogram shows the number of occurrences (frequency) of each median house value.
+   - Focus on:
+     - Values that appear most often.
+     - Values that appear less often.
+   - Keep only the **most relevant and representative data points** for analysis.
+
+## Quantiles and Percentiles
+Quantiles and percentiles help summarize the data distribution and provide deeper insights:
+- Quantiles divide the data into equal-sized intervals.
+  - Example: Quartiles split the data into 4 equal parts.
+- Percentiles** show the relative standing of a value within the data.
 
 
 
