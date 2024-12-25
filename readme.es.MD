@@ -233,6 +233,16 @@ Quantiles and percentiles help summarize the data distribution and provide deepe
 - 0: No correlation.
 - -1: Perfect negative correlation.
 
+###  Dropping a Column in a DataFrame
+
+- **`data.drop()`**: Removes the specified column.
+- **`"total_bedrooms"`**: The name of the column to be dropped.
+- **`axis=1`**: Indicates that the operation is performed on columns.
+- **`data =`**: Reassigns the updated DataFrame to the same variable to apply the change.
+- **`data.columns`**: Returns a list of column names in the updated DataFrame.
+- **Purpose**: This helps verify the removal of the specified column.
+
+
 
 
 
