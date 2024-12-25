@@ -227,6 +227,10 @@ Quantiles and percentiles help summarize the data distribution and provide deepe
 - Quantiles divide the data into equal-sized intervals.
   - Example: Quartiles split the data into 4 equal parts.
 - Percentiles** show the relative standing of a value within the data.
+**Correlation:** Measures the linear relationship between two variables. It ranges from:
+- 1: Perfect positive correlation.
+- 0: No correlation.
+- -1: Perfect negative correlation.
 
 
 
