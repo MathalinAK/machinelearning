@@ -242,6 +242,110 @@ Quantiles and percentiles help summarize the data distribution and provide deepe
 - **`data.columns`**: Returns a list of column names in the updated DataFrame.
 - **Purpose**: This helps verify the removal of the specified column.
 
+# **Data Analysis and Cleaning Steps**
+
+## **Boxplot for Removing Outliers**
+Boxplots are a statistical visualization tool that help identify outliers and understand data distribution. They represent the data using the following components:
+
+### **Components of a Boxplot**
+- **Central Box**: Represents the interquartile range (IQR), which includes the middle 50% of the data.
+- **Bottom Edge**: Indicates the 25th percentile (Q1).
+- **Top Edge**: Indicates the 75th percentile (Q3).
+- **Length of the Box**: Represents the IQR (`Q3 - Q1`).
+- **Median Line**: The dark line within the box represents the median (middle value) of the dataset when sorted in ascending order.
+- **Whiskers**:
+  - Lines extending from the box indicate the range of the dataset, excluding outliers.
+  - Whiskers span from the **Lower Bound** (`Q1 - 1.5 × IQR`) to the **Upper Bound** (`Q3 + 1.5 × IQR`).
+- **Outliers**: Data points outside this range are represented as black dots.
+
+---
+
+## **Removing Outliers**
+To remove outliers, follow these steps:
+
+1. **Calculate**:
+   - **IQR**: `Q3 - Q1`
+   - **Lower Bound (LB)**: `Q1 - 1.5 × IQR`
+   - **Upper Bound (UB)**: `Q3 + 1.5 × IQR`
+
+2. **Filter the Data**:
+   - Include only observations within the bounds:
+     ```
+     LB ≤ median income ≤ UB
+     ```
+   - This process results in clean data without extreme values.
+
+---
+
+## **Identifying High Income and Common Values**
+To analyze the data:
+- **Define**: Common prices and areas for houses.
+- **Find Patterns**: Frequently appearing data and patterns, particularly for people with average income.
+
+---
+
+## **Correlation Heatmaps**
+A correlation heatmap visualizes pairwise correlation scores between variables. Correlation values range from:
+- **-1**: Strong negative correlation.
+- **0**: No correlation.
+- **1**: Strong positive correlation.
+
+### **Key Elements**
+- **White Areas**: Indicate strong negative correlations.
+- **Dark Green Areas**: Indicate strong positive correlations.
+- **Diagonal Line**: Contains values of 1 as they represent the correlation of each variable with itself.
+- **Mirrored Values**: The heatmap is symmetric around the diagonal.
+
+### **Purpose**
+- Identify problematic independent variables with high correlation (**multicollinearity**).
+  - Multicollinearity distorts regression models.
+- Decide which variables to drop based on frequent high correlations.
+  - **Example**: Drop variables like `total_bedrooms` if they show high correlation with other independent variables.
+
+---
+
+## **Transforming String Values to Numeric (Dummy Variables)**
+- **Dummy Variables**: Binary (0 or 1) representations of categorical data.
+  - **Example**: `ocean_proximity` with five categories is converted into five dummy variables (e.g., `inland`, `island`, `nearby`).
+  - If all dummy variables for a category are 0, it indicates the condition is not satisfied.
+- **Purpose**: Helps analyze the statistical impact of categorical features on the dependent variable (e.g., median house values).
+
+---
+
+## **Identifying Significant Features**
+To determine which features significantly impact the dependent variable (e.g., median house values):
+- Analyze features describing houses (e.g., size, location, number of rooms) that influence the target variable.
+
+---
+
+## **Splitting Data: `train_test_split`**
+- Use `train_test_split` to divide the data:
+  - **80%**: Training data
+  - **20%**: Test data
+- **Random State**: Ensures reproducibility of results.
+
+---
+
+## **Fitting Models**
+1. **Train the Model**:
+   - Use both dependent (Y) and independent (X) variables:
+     ```python
+     model.fit(X_train, Y_train)
+     ```
+
+2. **Make Predictions**:
+   - Use the trained model to make predictions on unseen data:
+     ```python
+     Y_pred = model.predict(X_test)
+     ```
+
+3. **Evaluate Performance**:
+   - Compare predictions (`Y_pred`) with actual values (`Y_test`).
+
+4. **Analyze Results**:
+   - Predict and analyze median house values based on the fitted model and unseen data.
+
+
 
 
 
