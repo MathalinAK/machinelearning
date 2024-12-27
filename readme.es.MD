@@ -344,6 +344,38 @@ To determine which features significantly impact the dependent variable (e.g., m
 
 4. **Analyze Results**:
    - Predict and analyze median house values based on the fitted model and unseen data.
+# Prediction and Testing: Median House Values
+
+## Overview
+- **Objective**: Predict and test the **Median House Values** using test data.
+- **Approach**: Use the true values of the median house (not exposed during training) to evaluate how well the model estimates unknown median house values.
+- **Data**: 
+  - Characteristics of houses are provided in `X_test`.
+  - Corresponding true median house values (`y_test`) are **not used** for training.
+  - Testing data comprises **20%** of the dataset.
+
+---
+
+## Steps for Prediction and Testing
+
+### 1. Adding a Constant
+- Use `add_constant` to include a constant term for predictions in the regression model.
+
+### 2. OLS Assumptions to Evaluate Model Performance
+- **Ordinary Least Squares (OLS)** assumptions help determine how well the model fits the data.
+
+---
+
+## Key OLS Assumptions
+
+### **1. Linearity**
+- **Goal**: Verify a **positive linear relationship** between the **observed (true)** and **predicted** values.
+- **Evaluation**:
+  - Plot the **true median house values** (`y_test`) against the **predicted values**.
+  - Add a **best-fit line** to observe the relationship.
+  - The closer the data points lie to the red line (perfect prediction line), the better the linearity.
+- **Interpretation**:
+  - A positive slope indicates that as actual values increase, the predicted values also increase, confirming linearity.
 
 
 
@@ -354,7 +386,11 @@ To determine which features significantly impact the dependent variable (e.g., m
 
 
 
-.
+
+
+
+
+
 
 
 
