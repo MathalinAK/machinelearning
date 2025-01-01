@@ -1,3 +1,5 @@
+## Introduction
+This document summarizes insights from the video "Machine Learning in 2024 – Beginner's Course"[https://www.youtube.com/watch?v=bmmQA8A-yUA] on regression analysis, covering both theory and practical applications. Key topics include the bias-variance trade-off, overfitting, regularization, linear and logistic regression, and hands-on case studies. The content progresses from foundational concepts to data preprocessing, visualization, modeling, and predictive analytics, with timestamps for easy navigation.
 ## Machine learning 
 - It is a brand of artificial intelligence.
 - That helps to build models based on the data and learn the data in order to make different decision.
